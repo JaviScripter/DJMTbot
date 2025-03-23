@@ -148,13 +148,13 @@ export class BingoComponent extends Component<BingoComponentSave> {
     {
         if (!this.bingoCard){
             return await interaction.reply({
-                content: 'BingoCard is not initialized - **check source code!**',
+                content: 'Internal error - **contact staff ASAP!!**',
                 ephemeral: true
             });
         } else if (this.bingoCard.getBingoLists().length === 0)
         {
             return await interaction.reply({
-                content: `BingoCard object not initialized!!! Set a new bingo configuration.`,
+                content: `BingoCard has not been configured - contact staff!!`,
                 ephemeral: true
             });
         }
